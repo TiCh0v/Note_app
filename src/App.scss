@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Rethink Sans', sans-serif;
+    position: static;
+    text-decoration: none;
+
+    
+}
+::-webkit-scrollbar-track{
+   
+}
+
+.App{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 750px;
+    min-height: 530px;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+    box-shadow: 1px 1px 15px rgb(205, 205, 205);
+    border-radius: 10px;
+    border: 1px solid rgb(202, 202, 202);
+    
+
+}
+
+.sidebar1{
+    background-color: rgb(241, 241, 241);
+    min-height: calc(100% - 120px);
+    width: 20%;
+    border-right: 2px solid rgb(250, 249, 249);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-right: 20px;
+    
+    
+}
+
+span{
+    margin-left: 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+
+}
+
+.custom-pos{
+    position: relative;
+    top: 2px;
+
+}
+ul{
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+li{
+    padding: 10px 12px; 
+    display: flex;
+
+   &.active{
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 10px 12px; 
+    cursor: pointer;
+
+   }
+   &:hover{
+    background: rgb(245, 245, 245);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 10px 12px; 
+    cursor: pointer;
+   }
+
+   
+
+
+}
+
+
+.first-item {
+    margin-bottom: 30px;
+}
+
+.custom-pos{
+    position: relative;
+    top: 2px;
+}
+
+
+
+.custom-pos2{
+    
+    top: 3px;
+    
+}
+  
+span:hover{
+    cursor: pointer;
+}
+
+.todo_list{
+    user-select: none;
+    max-height: 300px;
+    overflow: scroll;
+    
+}
+.note_del{
+    align-items: center;
+    justify-content: space-between;
+}
